@@ -90,7 +90,7 @@ span {
 }
 
 .bg-6 {
-	background-image: url(../images/Illustration3-1.png);
+	background-image: url(../images/illustration3-1.png);
 	position: absolute;
 	width: 550px;
 	height: 700px;
@@ -248,7 +248,7 @@ span {
 	}
 
 	.ilustrasi2{
-		background-image: url(../images/Illustration2.png);
+		background-image: url(../images/illustration2.png);
 		position: absolute;
 		width: 521px; 
 		height: 479px; 
@@ -258,7 +258,7 @@ span {
 	}
 
 	.ilustrasi3{
-		background-image: url(../images/Illustration3.png);
+		background-image: url(../images/illustration3.png);
 		position: absolute; 
 		width: 508px; 
 		height: 320px;
@@ -318,7 +318,7 @@ span {
 	}
 
 	.bg-6 {
-		background-image: url(../images/Illustration3-1.png);
+		background-image: url(../images/illustration3-1.png);
 		position: absolute;
 		width: 950px;
 		height: 900px;
