@@ -1,0 +1,365 @@
+html {
+	position: relative;
+}
+
+/* versi mobile */
+/* menu */
+.menu li {
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* logo */
+.logo {
+	background-image: url(../images/logo.png);
+	margin-top: 10px;
+	margin-left: 50px;
+	width: 170px;
+	height: 40px;
+	background-size: 100%;
+}
+
+/* judul awal */
+.judul {
+	font-family: 'DM Serif Display';
+	font-size: 60px;
+	color: white;
+	line-height: 60px;
+	margin-top: 50px;
+}
+
+/* judul content */
+span {
+	font-size: 18px;
+	font-weight: bold;
+	color: #EE4D47;
+}
+
+/* subjudul content */
+.font-subjudul {
+	font-family: DM Serif Display;
+	font-size: 28px;
+	font-style: normal;
+	line-height: 140%;
+	color: #402B2B;
+}
+
+/* jarak */
+.jarak {
+	margin-top: 100px;
+}
+
+.jarak-awal {
+	margin-top: 100px;
+}
+
+.jarak-foot2 {
+	margin-top: 50px;
+}
+
+/* button */
+.btn {
+	height: 30px;
+	width: 120px;
+
+	font-family: Rubik;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 300;
+}
+
+/* background */
+.bg-1 {
+	background-image: url(../images/scene.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 450px;
+	width: 750px;
+	background-size: 100%;
+}
+
+.bg-3 {
+	background-image: url(../images/BG.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 600px;
+	width: 800px;
+	margin-top: 2150px;
+	background-size: 100%;
+}
+
+.bg-6 {
+	background-image: url(../images/Illustration3-1.png);
+	position: absolute;
+	width: 550px;
+	height: 700px;
+	margin-left: 200px;
+	margin-top: 950px;
+	background-size: 100%;
+}
+
+/* sosmed icon */
+.fa-facebook {
+	padding: 10px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	background-color: #EE4D47;
+	color: white;
+}
+
+.fa-twitter {
+	padding: 10px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	background-color: #EE4D47;
+	color: white;
+}
+
+.fa-instagram {
+	padding: 10px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	background-color: #EE4D47;
+	color: white;
+}
+
+/* Versi Desktop */
+@media only screen and (min-width: 1200px){
+	/* menu */
+	.menu li:last child {
+		margin-right: 200px;
+	}
+
+	/* logo */
+	.logo {
+		background-image: url(../images/logo.png);
+		margin-top: 10px;
+		margin-left: 10px;
+		width: 170px;
+		height: 40px;
+		background-size: 100%;
+	}
+
+	/* judul awal */
+	.judul {
+		font-family: 'DM Serif Display';
+		font-size: 80px;
+		color: white;
+		line-height: 80px;
+		margin-top: 80px;
+	}
+
+	/* judul content */
+	span {
+		font-size: 20px;
+		font-weight: bold;
+		color: #EE4D47;
+	}
+
+	/* subjudul content */
+	.font-subjudul {
+		font-family: DM Serif Display;
+		font-size: 38px;
+		font-style: normal;
+		line-height: 140%;
+		color: #402B2B;
+	}
+
+	/* isi content */
+	.font-isi {
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 30px;
+		color: #402B2B;
+	}
+
+	/* button */
+	.btn {
+		height: 40px;
+		width: 130px;
+
+		font-family: Rubik;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 300;
+	}
+
+	/* dekorasi */
+	.garis {
+		position: absolute;
+		width: 5px;
+		height: 100px;
+		left: 230px;
+		top: 3500px;
+
+		background: #EE4D47;
+	}
+
+	/* jarak */
+	.jarak {
+		margin-top: 200px;
+	}
+
+	.jarak-awal {
+		margin-top: 500px;
+	}
+
+	.jarak-faq {
+		margin-top: 100px;
+	}
+
+	.jarak-alert {
+		margin-top: 200px;
+	}
+
+	.jarak-alert2 {
+		margin-top: 50px;
+	}
+
+	.jarak-foot {
+		margin-top: 80px;
+	}
+
+	.jarak-foot2 {
+		margin-top: 100px;
+	}
+
+	/* ilustrasi */
+	.ilustrasi1{
+		background-image: url(../images/Illustration1.png);
+		position: absolute;
+		width: 476px;
+		height: 380px;
+		top: 900px;
+		left: 750px;
+		background-size: 100%;
+	}
+
+	.ilustrasi2{
+		background-image: url(../images/Illustration2.png);
+		position: absolute;
+		width: 521px; 
+		height: 479px; 
+		margin-top: 1400px;
+		margin-left: 100px;
+		background-size: 90%;
+	}
+
+	.ilustrasi3{
+		background-image: url(../images/Illustration3.png);
+		position: absolute; 
+		width: 508px; 
+		height: 320px;
+		margin-left: 700px; 
+		margin-top: 1900px; 
+		background-size: 100%;
+	}
+
+	/* background */
+	.bg-1 {
+		background-image: url(../images/scene.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		height: 900px;
+		width: 1400px;
+		background-size: 100%;
+	}
+
+	.bg-2 {
+		background-image: url(../images/mobel.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		height: 325px;
+		width: 500px;
+		margin-top: 625px;
+		background-size: 90%;
+	}
+
+	.bg-3 {
+		background-image: url(../images/BG.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		height: 460px;
+		width: 1200px;
+		margin-top: 3400px;
+		background-size: 90%;
+	}
+
+	.bg-4 {
+		background-image: url(../images/mobell.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		height: 209px;
+		width: 382px;
+		margin-top: 3220px;
+		background-size: 100%;
+	}
+
+	.bg-5 {
+		background-image: url(../images/dekor.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		height: 460px;
+		width: 1200px;
+		margin-top: 3400px;
+		background-size: 90%;
+	}
+
+	.bg-6 {
+		background-image: url(../images/Illustration3-1.png);
+		position: absolute;
+		width: 950px;
+		height: 900px;
+		margin-left: 400px;
+		margin-top: 1800px;
+		background-size: 100%;
+	}
+
+	/* sosmed icon */
+	.fa-facebook {
+		padding: 10px;
+		font-size: 30px;
+		width: 30px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+		background-color: #EE4D47;
+		color: white;
+	}
+
+	.fa-twitter {
+		padding: 10px;
+		font-size: 30px;
+		width: 30px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+		background-color: #EE4D47;
+		color: white;
+	}
+
+	.fa-instagram {
+		padding: 10px;
+		font-size: 30px;
+		width: 30px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+		background-color: #EE4D47;
+		color: white;
+	}
+}
+
+
