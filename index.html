@@ -1,279 +1,1654 @@
-<!-- landing page dari : https://www.uistore.design/items/traffico-landing-page-for-figma -->
-<!-- versi desktop dan tablet -->
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Customer-Basmalah</title>
 
-  <!-- My CSS -->
-  <link rel="stylesheet" href="./assets/style/style.css">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+	<script src="https://unpkg.com/feather-icons"></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <!-- My Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+	<style>
+		@media screen and (min-width: 200px){
+			.container{
+				width: 100%;
+				height: calc(100vh-56px);
+				/*height: calc(640-56px);*/
+			}
+			/*.wrapper {
+				width: 360px;
+				height: 640px;
+				margin: 0px;
+			}*/
+			/*.ellipse {
+				
 
-  <!-- My Icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-  <title>Trafico</title>
+				position: fixed;
+				margin: -15px;
+			}*/
+
+			.ellipse {
+				/* Ellipse 2 */
+
+				background: url(elips2.png) no-repeat;
+				position: absolute;
+				top: 0;
+				left: -40px;
+				width: 400px;
+				height: 300px;
+			}
+
+			.menu-atas {
+				/*transform: translate(-50%, 350%);*/
+				position: fixed;
+				width: 215px;
+				height: 56px;
+				left: 71px;
+				top: 131px;
+
+				background: #FFFFFF;
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 10px;
+			}
+
+			.menu-bawah {
+				position:absolute;
+				width: 360px;
+				height: 56px;
+				left: 0px;
+				/*bottom: 0;*/
+				top: 584px;
+
+				background: #0D7E46;
+			}
+
+			.icon-notifikasi {
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				left: 355px;
+				top: 25px;
+			}
+
+			.font-cash {
+				position: fixed;
+				width: 135px;
+				height: 27px;
+				left: 17px;
+				top: 57px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-rp {
+				position: fixed;
+				width: 30px;
+				height: 30px;
+				left: 17px;
+				top: 75px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-angka {
+				position: fixed;
+				width: 118px;
+				height: 27px;
+				left: 41px;
+				top: 73px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 30px;
+
+				color: #FFFFFF;
+			}
+
+			.icon-tf {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 113px;
+				top: 142px;
+				color: #1F7942;
+			}
+
+			.font-tf {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 71px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.icon-history {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 220px;
+				top: 143px;
+				color: #1F7942;
+			}
+
+			.font-history {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 178px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.logo {
+				position: fixed;
+				width: 219px;
+				height: 75px;
+				left: 71px;
+				top: 330px;
+			}
+
+			.icon-home {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 25px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-home {
+				position: fixed;
+				width: 71px;
+				height: 14px;
+				left: 0px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-promo {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 90px;
+				top: 594px;
+				color: white;
+
+				/*transform: rotate(-48.42deg);*/
+			}
+
+			.font-promo {
+				position: fixed;
+				width: 72px;
+				height: 14px;
+				left: 71px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-info {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 240px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-info {
+				position: fixed;
+				width: 69px;
+				height: 14px;
+				left: 217px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-profil {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 311px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-profil {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 286px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-scan {
+				position: fixed;
+				/*transform: translate(-50%, 350%);*/
+				width: 36px;
+				height: 36px;
+				left: 180px;
+				color: #1F7942;
+			}
+
+			.font-scan {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 145px;
+				top: 615px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				/*color: white;*/
+				color: #1F7942;
+			}
+
+			.menu-scan {
+				/*position: relative;
+				width: 74px;
+				height: 74px;
+				left: 130px;
+				top: 566px;
+				border-radius: 50%;
+
+				background: #FFFFFF;
+				border: 1px solid #0D7E46;
+				box-sizing: border-box;*/
+				background: url(scan.png) no-repeat;
+				position: absolute;
+				top: 565px;
+				left: 145px;
+				width: 74px;
+				height: 74px;
+			}
+		}
+		@media screen and (min-width: 320px){
+			.container{
+				width: 100%;
+				height: calc(100vh-56px);
+				/*height: calc(640-56px);*/
+			}
+			/*.wrapper {
+				width: 360px;
+				height: 640px;
+				margin: 0px;
+			}*/
+			/*.ellipse {
+				
+
+				position: fixed;
+				margin: -15px;
+			}*/
+
+			.ellipse {
+				/* Ellipse 2 */
+
+				background: url(elips2.png) no-repeat;
+				position: absolute;
+				top: 0;
+				left: -40px;
+				width: 400px;
+				height: 300px;
+			}
+
+			.menu-atas {
+				/*transform: translate(-50%, 350%);*/
+				position: fixed;
+				width: 215px;
+				height: 56px;
+				left: 71px;
+				top: 131px;
+
+				background: #FFFFFF;
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 10px;
+			}
+
+			.menu-bawah {
+				position:absolute;
+				width: 360px;
+				height: 56px;
+				left: 0px;
+				/*bottom: 0;*/
+				top: 584px;
+
+				background: #0D7E46;
+			}
+
+			.icon-notifikasi {
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				left: 355px;
+				top: 25px;
+			}
+
+			.font-cash {
+				position: fixed;
+				width: 135px;
+				height: 27px;
+				left: 17px;
+				top: 57px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-rp {
+				position: fixed;
+				width: 30px;
+				height: 30px;
+				left: 17px;
+				top: 75px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-angka {
+				position: fixed;
+				width: 118px;
+				height: 27px;
+				left: 41px;
+				top: 73px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 30px;
+
+				color: #FFFFFF;
+			}
+
+			.icon-tf {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 113px;
+				top: 142px;
+				color: #1F7942;
+			}
+
+			.font-tf {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 71px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.icon-history {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 220px;
+				top: 143px;
+				color: #1F7942;
+			}
+
+			.font-history {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 178px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.logo {
+				position: fixed;
+				width: 219px;
+				height: 75px;
+				left: 71px;
+				top: 330px;
+			}
+
+			.icon-home {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 25px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-home {
+				position: fixed;
+				width: 71px;
+				height: 14px;
+				left: 0px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-promo {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 90px;
+				top: 594px;
+				color: white;
+
+				/*transform: rotate(-48.42deg);*/
+			}
+
+			.font-promo {
+				position: fixed;
+				width: 72px;
+				height: 14px;
+				left: 71px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-info {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 240px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-info {
+				position: fixed;
+				width: 69px;
+				height: 14px;
+				left: 217px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-profil {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 311px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-profil {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 286px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-scan {
+				position: fixed;
+				/*transform: translate(-50%, 350%);*/
+				width: 36px;
+				height: 36px;
+				left: 180px;
+				color: #1F7942;
+			}
+
+			.font-scan {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 145px;
+				top: 615px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				/*color: white;*/
+				color: #1F7942;
+			}
+
+			.menu-scan {
+				/*position: relative;
+				width: 74px;
+				height: 74px;
+				left: 130px;
+				top: 566px;
+				border-radius: 50%;
+
+				background: #FFFFFF;
+				border: 1px solid #0D7E46;
+				box-sizing: border-box;*/
+				background: url(scan.png) no-repeat;
+				position: absolute;
+				top: 565px;
+				left: 145px;
+				width: 74px;
+				height: 74px;
+			}
+		}
+		@media screen and (min-width: 360px){
+			.container{
+				width: 100%;
+				height: calc(100vh-56px);
+			}
+			/*.wrapper {
+				width: 360px;
+				height: 640px;
+				margin: 0px;
+			}*/
+			/*.ellipse {
+				
+
+				position: fixed;
+				margin: -15px;
+			}*/
+
+			.ellipse {
+				/* Ellipse 2 */
+
+				background: url(elips2.png) no-repeat;
+				position: absolute;
+				top: 0;
+				left: -40px;
+				width: 400px;
+				height: 300px;
+			}
+
+			.menu-atas {
+				/*transform: translate(-50%, 350%);*/
+				position: fixed;
+				width: 215px;
+				height: 56px;
+				left: 71px;
+				top: 131px;
+
+				background: #FFFFFF;
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 10px;
+			}
+
+			.menu-bawah {
+				position:absolute;
+				width: 360px;
+				height: 56px;
+				left: 0px;
+				top: 584px;
+
+				background: #0D7E46;
+			}
+
+			.icon-notifikasi {
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				left: 355px;
+				top: 25px;
+			}
+
+			.font-cash {
+				position: fixed;
+				width: 135px;
+				height: 27px;
+				left: 17px;
+				top: 57px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-rp {
+				position: fixed;
+				width: 30px;
+				height: 30px;
+				left: 17px;
+				top: 75px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-angka {
+				position: fixed;
+				width: 118px;
+				height: 27px;
+				left: 41px;
+				top: 73px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 30px;
+
+				color: #FFFFFF;
+			}
+
+			.icon-tf {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 113px;
+				top: 142px;
+				color: #1F7942;
+			}
+
+			.font-tf {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 71px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.icon-history {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 220px;
+				top: 143px;
+				color: #1F7942;
+			}
+
+			.font-history {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 178px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.logo {
+				position: fixed;
+				width: 219px;
+				height: 75px;
+				left: 71px;
+				top: 330px;
+			}
+
+			.icon-home {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 25px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-home {
+				position: fixed;
+				width: 71px;
+				height: 14px;
+				left: 0px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-promo {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 90px;
+				top: 594px;
+				color: white;
+
+				/*transform: rotate(-48.42deg);*/
+			}
+
+			.font-promo {
+				position: fixed;
+				width: 72px;
+				height: 14px;
+				left: 71px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-info {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 240px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-info {
+				position: fixed;
+				width: 69px;
+				height: 14px;
+				left: 217px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-profil {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 311px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-profil {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 286px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-scan {
+				position: fixed;
+				/*transform: translate(-50%, 350%);*/
+				width: 36px;
+				height: 36px;
+				left: 165px;
+				bottom: 30px;
+				color: #1F7942;
+			}
+
+			.font-scan {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 145px;
+				top: 615px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				/*color: white;*/
+				color: #1F7942;
+			}
+
+			.menu-scan {
+				/*position: relative;
+				width: 74px;
+				height: 74px;
+				left: 130px;
+				top: 566px;
+				border-radius: 50%;
+
+				background: #FFFFFF;
+				border: 1px solid #0D7E46;
+				box-sizing: border-box;*/
+
+				background: url(scan.png) no-repeat;
+				position: absolute;
+				top: 565px;
+				left: 145px;
+				width: 74px;
+				height: 74px;
+			}
+		}
+
+		@media screen and (min-width: 375px){
+			.container{
+				width: 100%;
+				height: calc(100vh-56px);
+			}
+			.ellipse {
+				/* Ellipse 2 */
+
+				background: url(elips2.png) no-repeat;
+				position: absolute;
+				top: 0;
+				left: -20px;
+				width: 430px;
+				height: 300px;
+			}
+			.menu-atas {
+				/*transform: translate(-50%, 350%);*/
+				position: fixed;
+				width: 215px;
+				height: 56px;
+				left: 100px;
+				top: 131px;
+
+				background: #FFFFFF;
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 10px;
+			}
+
+			.menu-bawah {
+				position:fixed;
+				width: 410px;
+				height: 56px;
+				left: 0px;
+				top: 584px;
+
+				background: #0D7E46;
+			}
+
+			.icon-notifikasi {
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				left: 375px;
+				top: 25px;
+			}
+
+			.font-cash {
+				position: fixed;
+				width: 135px;
+				height: 27px;
+				left: 17px;
+				top: 57px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-rp {
+				position: fixed;
+				width: 30px;
+				height: 30px;
+				left: 17px;
+				top: 75px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-angka {
+				position: fixed;
+				width: 118px;
+				height: 27px;
+				left: 41px;
+				top: 73px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 26px;
+				line-height: 30px;
+
+				color: #FFFFFF;
+			}
+
+			.icon-tf {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 137px;
+				top: 142px;
+				color: #1F7942;
+			}
+
+			.font-tf {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 95px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.icon-history {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 244px;
+				top: 143px;
+				color: #1F7942;
+			}
+
+			.font-history {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 202px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.logo {
+				position: fixed;
+				width: 219px;
+				height: 75px;
+				left: 100px;
+				top: 330px;
+			}
+
+			.icon-home {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 25px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-home {
+				position: fixed;
+				width: 71px;
+				height: 14px;
+				left: 0px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-promo {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 90px;
+				top: 594px;
+				color: white;
+
+				/*transform: rotate(-48.42deg);*/
+			}
+
+			.font-promo {
+				position: fixed;
+				width: 72px;
+				height: 14px;
+				left: 71px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-info {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 288px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-info {
+				position: fixed;
+				width: 69px;
+				height: 14px;
+				left: 263px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-profil {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 359px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-profil {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 334px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-scan {
+				position: fixed;
+				/*transform: translate(-50%, 350%);*/
+				width: 36px;
+				height: 36px;
+				left: 165px;
+				bottom: 85px;
+				color: black;
+			}
+
+			.font-scan {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 165px;
+				top: 615px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				/*color: white;*/
+				color: #1F7942;
+			}
+
+			.menu-scan {
+				/*position: relative;
+				width: 74px;
+				height: 74px;
+				left: 130px;
+				top: 566px;
+				border-radius: 50%;
+
+				background: #FFFFFF;
+				border: 1px solid #0D7E46;
+				box-sizing: border-box;*/
+				background: url(scan.png) no-repeat;
+				position: absolute;
+				top: 565px;
+				left: 165px;
+				width: 74px;
+				height: 74px;
+			}
+		}
+
+		@media screen and (min-width: 425px){
+			.back {
+				position: relative;
+				width: 360px;
+				height: 640px;
+
+				background: grey;
+			}
+			.ellipse {
+				background: url(elips2.png) no-repeat;
+				position: absolute;
+				top: 0;
+				left: -5;
+				width: 445px;
+				height: 300px;
+			}
+			.menu-atas {
+				/*transform: translate(-50%, 350%);*/
+				position: fixed;
+				width: 215px;
+				height: 56px;
+				left: 100px;
+				top: 131px;
+
+				background: #FFFFFF;
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 10px;
+			}
+
+			.menu-bawah {
+				position:fixed;
+				width: 430px;
+				height: 56px;
+				left: 0px;
+				top: 584px;
+
+				background: #0D7E46;
+			}
+
+			.icon-notifikasi {
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				left: 400px;
+				top: 25px;
+			}
+
+			.font-cash {
+				position: fixed;
+				width: 135px;
+				height: 27px;
+				left: 17px;
+				top: 57px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-rp {
+				position: fixed;
+				width: 30px;
+				height: 30px;
+				left: 17px;
+				top: 75px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+
+				color: #FFFFFF;
+			}
+
+			.font-angka {
+				position: fixed;
+				width: 118px;
+				height: 27px;
+				left: 41px;
+				top: 73px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 30px;
+
+				color: #FFFFFF;
+			}
+
+			.icon-tf {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 137px;
+				top: 142px;
+				color: #1F7942;
+			}
+
+			.font-tf {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 95px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.icon-history {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 244px;
+				top: 143px;
+				color: #1F7942;
+			}
+
+			.font-history {
+				position: fixed;
+				width: 107px;
+				height: 14px;
+				left: 202px;
+				top: 166px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #1F7942;
+			}
+
+			.logo {
+				position: fixed;
+				width: 219px;
+				height: 75px;
+				left: 100px;
+				top: 330px;
+			}
+
+			.icon-home {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 25px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-home {
+				position: fixed;
+				width: 71px;
+				height: 14px;
+				left: 0px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-promo {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 114px;
+				top: 594px;
+				color: white;
+
+				/*transform: rotate(-48.42deg);*/
+			}
+
+			.font-promo {
+				position: fixed;
+				width: 72px;
+				height: 14px;
+				left: 95px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-info {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 300px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-info {
+				position: fixed;
+				width: 69px;
+				height: 14px;
+				left: 277px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-profil {
+				position: fixed;
+				width: 24px;
+				height: 24px;
+				left: 371px;
+				top: 594px;
+				color: white;
+			}
+
+			.font-profil {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 346px;
+				top: 618px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				color: #FFFFFF;
+			}
+
+			.icon-scan {
+				position: fixed;
+				/*transform: translate(-50%, 350%);*/
+				width: 36px;
+				height: 36px;
+				left: 216px;
+				bottom: 30px;
+				color: black;
+			}
+
+			.font-scan {
+				position: fixed;
+				width: 74px;
+				height: 14px;
+				left: 180px;
+				top: 615px;
+
+				font-family: Quicksand;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: center;
+
+				/*color: white;*/
+				color: #1F7942;
+			}
+
+			.menu-scan {
+				/*position: relative;
+				width: 74px;
+				height: 74px;
+				left: 163px;
+				top: 566px;
+				border-radius: 50%;
+
+				background: #FFFFFF;
+				border: 1px solid #0D7E46;
+				box-sizing: border-box;*/
+				background: url(scan.png) no-repeat;
+				position: absolute;
+				top: 565px;
+				left: 180px;
+				width: 74px;
+				height: 74px;
+			}
+		}
+	</style>
 </head>
 <body>
-<!-- Images -->
-	<div class="bg-1"></div>
-	<div class="bg-2"></div>
-	<div class="ilustrasi1"></div>
-	<div class="ilustrasi2"></div>
-	<div class="bg-6"></div>
-	<div class="ilustrasi3"></div>
-	<div class="bg-3"></div>
-	<div class="bg-4"></div>
-	<div class="bg-5"></div> 
+<div class="container">
+	<div class="wrapper">
+		<!-- header -->
+		<div class="ellipse">
+			<div class="icon-notifikasi">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+			</div>
+			<div class="font-cash">Cash</div>
+			<div class="font-rp">Rp.</div>
+			<div class="font-angka">200.000</div>
+		</div>
+		<!-- close header -->
 
-<!-- Menu -->
-	<div class="header">
-		<nav class="navbar navbar-expand-lg navbar-light offset-md-1 menu">
-	      <a class="navbar-brand" href="#"><div class="logo"></div></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-	        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="margin-top: 10px; margin-right: 100px;">
-	        <ul class="navbar-nav">
-	          <li class="nav-item">
-	            <a class="nav-link" href="#"> <font style="color: white;"> ABOUT </font></a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#"> <font style="color: white;">HOW </font></a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#"> <font style="color: white;">FAQS </font></a>
-	          </li>
-	        </ul>
-	        <a href="#" class="nav-link"><button class="btn btn-danger" style="margin-right: 50px; margin-top: 5px;">CONTACT US</button></a>
-	      </div>
-    	</nav>
-	</div>
-<!-- akhir menu -->
+		<!-- menu atas -->
+		<div class="menu-atas">
+			<div class="icon-tf"><span class="iconify" data-icon="uil-exchange-alt" data-inline="false" style="width: 24px; height: 24px;"></span></div>
+			<div class="font-tf">Transfer</div>
+			<div class="icon-history"><span class="iconify" data-icon="uil-history" data-inline="false" style="width: 24px; height: 24px;"></span></div>
+			<div class="font-history">History</div>	
+		</div>
+		<!-- close menu atas -->
 
-<!-- Judul -->
-	<div class="container judul">
-		<div class="row">
-			<div class="col-md-6">
-				Your awesome traffic permit consultant.
-				<br>
-				<button class="btn btn-danger">GET STARTED  <i class="fa fa-long-arrow-right"></i></button>
+		<!-- content -->
+		<div class="logo"><img src="basmalah.png" style="width: 219px; height: 75px;"></div>
+		<!-- close content -->
+
+		<!-- navbar menu -->
+		<div class="menu-bawah"></div>
+			<div class="icon-home">
+				<span class="iconify" data-icon="uil-home-alt" data-inline="false" style="width: 24px; height: 24px;"></span>
+				<div class="font-home">Beranda</div>
+			</div>
+			<div class="icon-promo">
+				<!-- <span class="iconify" data-icon="uil-label-alt" data-inline="false" style="width: 24px; height: 24px;"></span> -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+				<div class="font-promo">Promo</div>
+			</div>
+			<div class="icon-info">
+				<span class="iconify" data-icon="uil-info-circle" data-inline="false" style="width: 24px; height: 24px;"></span>
+				<div class="font-info">Info</div>
+			</div>
+			<div class="icon-profil">
+				<span class="iconify" data-icon="uil-user-circle" data-inline="false" style="width: 24px; height: 24px;"></span>
+				<div class="font-profil">Profil</div>
+			</div>
+			<div class="menu-scan">
+					<!-- <span class="iconify" data-icon="uil-qrcode-scan" data-inline="false" style="width: 36px; height: 36px;"></span> -->
+				<div class="font-scan">Scan</div>
 			</div>
 		</div>
+		<!-- close navbar menu -->
 	</div>
-<!-- akhir judul -->
-
-<!-- content -->
-	<div class="container jarak jarak-awal">
-		<div class="row">
-			<div class="col-md-4">
-				<span><p>ABOUT US</p></span>
-				<p class="font-isi">The occupational traffic permit is one of the most
-          		important things in the company when carrying out
-          		freight transport. In fact, it is a prerequisite for doing
-          		business traffic at all.</p>
-			
-			<div class="alert alert-warning" role="alert">
-				<p class="font-isi">
-					How do you do when you need to obtain
-            		a commercial traffic permit for freight
-            		transport to your business?
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="container jarak">
-		<div class="row">
-			<div class="col-md-4 offset-md-8">
-				<span><p>HOW TO APPLY</p></span>
-				<p class="font-isi">
-					When applying for a traffic permit, there are certain
-          			requirement that you must meet that are included in
-         	 		the examination: requirements for professional
-          			knowledge, solid establishment, good reputation and
-          			financial resources. Important to remember is to confirm
-          			your application for a traffic permit by the company's
-          			company signer or CEO.
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="container jarak">
-		<div class="row">
-			<div class="col-md-6">
-				<span><p>FAQ</p></span>
-				<p class="font-subjudul">Questions and Answer on Professional Traffic Permits:</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="container jarak-faq">
-		<div class="row justify-content-around">
-			<div class="col-md-4 font-isi">
-				<div class="alert alert-light text-left shadow">What is a professional traffic permit?
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-				<div class="alert alert-light text-left shadow">How to check the traffic condition? 
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-				<div class="alert alert-light text-left shadow">What are the requirements for a professional traffic permit? 
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-				<div class="alert alert-light text-left shadow">Are there professional traffic permit training courses at a distance? 
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-				<div class="alert alert-light text-left shadow">How is the sample for a professional traffic permit booked? 
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-			</div>
-			<div class="col-md-4 font-isi">
-				<div class="alert alert-light text-left shadow">When is a professional traffic permit needed? 
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-				<div class="alert alert-light text-left shadow">Where to look for a traffic permit? 
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-				<div class="alert alert-light text-left shadow">Are there differences between a traffic permit and a professional traffic permit? 
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-				<div class="alert alert-light text-left shadow">How much does a commercial traffic permit cost for goods? 
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-				<div class="alert alert-light text-left shadow">How to plug in for the traffic permit test? 
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span>&plus;</span>
-					</button>
-				</div>
-				<div class="alert alert-warning text-center shadow">LOAD MORE</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container jarak">
-		<div class="row justify-content-around">
-			<div class="col-md-3">
-				<span><p>ABOUT US</p></span>
-				<p class="font-subjudul">Out Awesome Clients</p>
-			</div>
-			<div class="alert alert-light shadow col-md-3 font-isi">
-				Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee. <br><br> <img src="./assets/images/poto.png" style="width: 40px; height: 40px;"> Isak Pettersson
-			</div>
-			<div class="alert alert-light shadow col-md-3 font-isi">
-				From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors who can generate and certify the traffic control plan. <br> <img src="./assets/images/poto.png" style="width: 40px; height: 40px;"> Simon Sandberg
-			</div>
-		</div>
-	</div>
-
-	<div class="container jarak">
-		<div class="row justify-content-around font-isi">
-
-			<div class="col-md-4">
-				<div class="alert jarak-alert" style="color: white;">
-					We provide traffic management consultants so you get started quickly, contact us for a quote today!
-				</div>				
-			</div>
-
-			<div class="garis"></div>
-
-			<div class="col-md-4 jarak-alert2">
-				<div class="alert alert-light shadow">
-					<form>
-						<div class="form-group col-md-12">
-		            		<label>Name</label> <br>
-		            		<input type="text" name="nama" class="form-control form-control-lg" placeholder="Your name">
-	          			</div>
-	          			<div class="form-group col-md-12">
-		            		<label for="exampleInputEmail">Email address</label>
-		            		<input type="email" name="email" class="form-control form-control-lg" placeholder="Your email address">
-	          			</div>
-	          			<div class="col-md-4">
-	          				<button type="submit" class="btn btn-danger">GET STARTED  <i class="fa fa-long-arrow-right"></i></button>
-	          			</div>
-					</form>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-<!-- akhir content -->
-
-<!-- footer -->
-	<div class="footer jarak-foot">
-		<nav class="navbar navbar-expand-lg navbar-light menu">
-	      <a class="navbar-brand" href="#"><div class="logo"></div></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-	        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="margin-right: 200px;">
-	        <ul class="navbar-nav">
-	          <li class="nav-item">
-	            <a class="nav-link" href="#"> <font style="color: white;">ABOUT </font></a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#"> <font style="color: white;">HOW TO </font></a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#"> <font style="color: white;">FAQS </font></a>
-	          </li>
-	        </ul>
-	      </div>
-    	</nav>
-
-    	<div class="row justify-content-around jarak-foot2">
-    		<div class="col-md-4 font-isi">
-    			<p>copyright &copy 2019</p>
-    		</div>
-    		<div class="col-md-4">
-    			<i class="fa fa-facebook"></i>
-    			<i class="fa fa-twitter"></i>
-    			<i class="fa fa-instagram"></i>
-    		</div>
-    	</div>
-	</div>
-
-<!-- akhir footer -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    
+</div>
 </body>
 </html>
