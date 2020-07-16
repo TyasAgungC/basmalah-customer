@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail</title>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+	<script src="https://unpkg.com/feather-icons"></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style>
+		.container {
+			width: 100%;
+			height: calc(100vh-56px);
+		}
+
+		body {
+			font-family: Quicksand;
+			font-style: normal;
+			font-weight: 500;
+		}
+
+		header {
+			position: fixed;
+			height: 56px;
+			width: 100%;
+			background-color: #0D7E46;
+			padding: 15px;
+			top: 0;
+		}
+
+		.font-history {
+			font-size: 16px;
+			color: white;
+			letter-spacing: 2%;
+		}
+
+		.font-rupiah {
+			text-align: right;
+			color: green;
+		}
+
+		.date-label {
+			/*width: 100%;
+			height: 48px;
+			background-color: #0001;*/
+			font-size: 16px;
+			font-weight: 600px;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="col-lg-2 col-2">
+				<span class="iconify" data-icon="gridicons-arrow-left" data-inline="false" style="width: 24px; height: 24px; color: white;"></span>
+			</div>
+			<div class="col-lg-10 col-10 font-history">
+				<p>History</p>
+			</div>
+		</div>
+	</header>
+	<hr>
+	<div class="container date-label" style="margin-top: 56px;">
+		<p>21 Juni 2020</p>
+	</div>
+	<hr>
+	<div class="container">
+		<p><b>Grab</b></p>
+		<div class="row">
+			<div class="col-lg-8 col-8"><p>Pembayaran</p></div>
+			<div class="col-lg-4 col-4 font-rupiah"><p>- Rp. 3.000</p></div>
+		</div>
+	</div>
+	<hr>
+	<div class="container">
+		<p><b>Transfer</b></p>
+		<div class="row">
+			<div class="col-lg-8 col-8"><p>Penerimaan</p></div>
+			<div class="col-lg-4 col-4 font-rupiah"><p>+ Rp. 30.000</p></div>
+		</div>
+	</div>
+</body>
+</html>
